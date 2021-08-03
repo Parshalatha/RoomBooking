@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html>
+    <head lang="en">
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <style>
+            body{
+                position: relative;
+            }
+            .main{
+                width: 100%;
+            }
+            #h1{
+                color: rgb(187, 255, 0);
+                text-align: center;
+            }
+            
+            .location{
+                color: rgb(25, 236, 18);
+                font-size: 20px;
+                margin-left: 30px;
+            }
+            .left{
+               width: 30%;
+               background-color: purple;
+               height: 500px;
+               margin-left: 20px;
+               margin-top: -30px;
+            }
+            button{
+                border-radius: 10%;
+                border-style:none;
+                width: 40%;
+                height: 35px;
+                background-color: rgb(12, 177, 48);
+                margin-left: 100px;
+               font-size: 20px;
+            }
+            h2{
+                color: deeppink;
+            }
+            button:hover{
+                background-color: red;
+            }
+            .right{
+                /*float: right;*/
+                margin-left: 10px;
+               width: 65%;
+                /*border: 2px solid black;*/
+                margin-top: -500px;
+                float: right;
+               
+            }
+            /*.maincontainer{
+              width: 100%;
+              
+            }*/
+            .top
+            {
+               width: 100%;
+               /*border: 1px solid black;*/ 
+               
+            }
+            .discription{
+                width: 50%;
+               float: right;
+               margin-right: 190px;
+            }
+            .img{
+                width: 50%;
+                height: 300px;
+            }
+            .middle{
+                width: 100%; 
+                /*border: 1px solid black; 
+               margin-left: 500px;
+                margin-top: -407px;*/
+            }
+            .bottom{    
+                width: 100%;
+                /* border: 1px solid black; 
+               float: right;
+                margin-top: -405px;
+                margin-right: 60px;*/
+            }
+            .bookbutton{
+                width: 30%;
+                height: 35px;
+                background-color: rgb(27, 124, 79);
+                border-style: none;
+                border-radius: 40%;
+                float: right;
+                margin-top: -10px;
+            }
+        </style>
+    </head>
+    <body>
+        <h1 id="h1">Room Booking</h1>
+      <div class="main"> 
+         <div class="left"> 
+            <h2 style="margin-left: 30px;">Enter Details</h2> 
+             <div>
+                <label class="location">Location:    </label>
+                <select>
+                    <option>chennai</option>
+                    <option>Goa</option>
+                    <option>Delhi</option>
+                    <option>Mumbai</option>
+                    <option>Jaipur</option>
+                    <option>Bangalor</option>
+                    <option>Agra</option>
+                    <option>Kochi</option>
+                    <option>Hyderabad</option>
+                    <option>shimla</option>
+                    <option>Manali</option>
+                    <option>Ladakh</option>
+                    <option>Pondicherry</option>
+                    <option>Madhurai</option>
+                    <option>Mysore</option>
+                </select>
+             </div>
+               <br>
+               <lable class="location">Check-in date:</lable>
+               <input type="date">
+               <br>
+               <br>
+               <lable class="location">Check-out date:</lable>
+               <input type="date">
+               <br>
+               <br>
+               <label class="location">No.of members:</label>
+               <input type="text">
+               <br>
+               <br>
+               <label class="location">Room Type :</label>
+                 <select>
+                    <option>Ac</option>
+                    <option>Non-Ac</option>
+                    <option>Deluxe</option>
+                </select>
+                <br>
+                <br>
+                <br>
+                <button name="submit">Search</button>
+        </div>
+        <div class="right">
+            <h2>Hotel Paradise Hyderabad</h2>
+            <div class="maincontainer">
+                <div class="top">
+                      <img src="Room1.jpg"> 
+                    <div class="discription">
+                      <p style="color: green;">
+                         Hayatt Place Banjarahills, <br>
+                         2 single beds,<br>
+                         Type:AC<br><br>
+                         cost:Rs.1000/day<br><br>
+                         <button class="bookbutton">Book Now</button>
+                      </p>
+                    </div> 
+                </div>
+                <div class="middle">
+                        <img src="Room2.jpg">
+                        <div class="discription">
+                        <p style="color: green;">
+                            Novotel Hyderabad covention center,<br>
+                            Double bedroon<br>
+                           Type:Non-AC<br><br>
+                           cost:Rs.600/day<br><br>
+                           <button class="bookbutton">Book Now</button>
+                        </p>
+                    </div>
+                </div>
+                <div class="bottom">
+                        <img src="Room3.jpg">
+                        <div class="discription">
+                        <p style="color: green;">
+                            Holiday Inn,Hitech city,<br>
+                            Double bedroom<br>
+                           Type:Deluxe<br><br>
+                           cost:Rs.850/day<br>
+                           <button class="bookbutton">Book Now</button>
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+        <h2>Hotel Navatha,Hyderabad</h2>
+            <div class="maincontainer">
+                <div class="top">
+                      <img src="Room4.jpg"> 
+                    <div class="discription">
+                      <p>
+                         Double bedroom<br><br>
+                         
+                         Type:AC<br><br>
+                         cost:Rs.1000/day<br><br>
+                         <button class="bookbutton">Book Now</button>
+                      </p>
+                    </div> 
+                </div>
+                <div class="middle">
+                        <img src="Room2.jpg">
+                        <div class="discription">
+                        <p>
+                            Doble bedroom<br><br>
+                           Type:Non-AC<br><br>
+                           cost:Rs.600/day<br><br>
+                           <button class="bookbutton">Book Now</button>
+                        </p>
+                    </div>
+                </div>
+                <div class="bottom">
+                        <img src="Room3.jpg">
+                        <div class="discription">
+                        <p>
+                            Room-3<br><br>
+                           Type:Deluxe<br>
+                           cost:Rs.850/day<br>
+                           <button class="bookbutton">Book Now</button>
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div> 
+    </body>
+</html>
